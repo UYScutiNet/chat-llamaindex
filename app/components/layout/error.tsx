@@ -63,14 +63,14 @@ export class ErrorBoundary extends React.Component<any, IErrorBoundaryState> {
                 <code>{this.state.info?.componentStack}</code>
               </pre>
               <div className="flex justify-between">
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   onClick={() => window.open(GITHUB_URL, "_blank")}
                 >
                   <Github className="mr-2 h-4 w-4" />
                   <span>Report This Error</span>
-                </Button>
+                </Button> */}
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
                     <Button variant="outline">
